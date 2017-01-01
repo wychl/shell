@@ -1,5 +1,10 @@
 #!/bin/bash
-for skill in C PHP Python Java Go
-do 
-    echo "I am good at ${skill}Script"
-done
+array_name=(value0 value1 value2)
+
+  echo ${array_name[2]}
+echo ${array_name[*]}
+echo ${array_name[@]}
+
+echo ${#array_name[*]}
+echo ${#array_name[@]}
+echo ${#array_name[1]}
