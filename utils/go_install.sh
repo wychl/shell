@@ -1,3 +1,5 @@
+#!/bin/bash
+
 VERSION=1.10
 OS=linux
 ARCH=amd64
@@ -12,7 +14,7 @@ INSTALLPATH=/usr/local
 curl -o  go$VERSION.$OS-$ARCH.tar.gz  $ADDRESS/go$VERSION.$OS-$ARCH.tar.gz
 
 
-if [ -e /usr/local/go/ ]; then
+if [ -e $GOROOT ]; then
  
     rm -r $OLDGOROOT
 
